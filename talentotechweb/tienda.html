@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+</head>
+<body>
+    <header>
+        <div id="titulo">Tienda - 2024 - Talento Tech</div>
+        <br>
+        <button id="btnPagar" onclick="pagar()">Confirmar</button>
+        <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+    </header>
+    <main>
+        <section>
+            <img src="img/web1.jpg" alt="">
+            <div class="tarjeta">
+                <h3>Reparación de Computadoras</h3>
+                <p>Trabajamos con todo tipo de equipos: desde notebooks,pcs, macbooks, todos los sistemas operativos.</p>
+                <button id="btnComprar" onclick="agregarProducto('Reparacionpcs')">Solicitar</button>
+            </div>
+        </section>
+        <section>
+            <div class="tarjeta">
+                <h3>Soluciones de Audio y video</h3>
+                <p>Nos encargamos de llevar adelante instalaciones y proyectos llave en mano. </p>
+                <button id="btnComprar" onclick="agregarProducto('Cotizarav')">Solicitar</button>
+            </div>
+        </section>
+        <section>
+            <div class="tarjeta">
+                <h3>Diseño Web</h3>
+                <p>Páginas web atractivas y funcionales para tu empresa.</p>
+
+                <button id="btnComprar" onclick="agregarProducto('Cotizarweb')">Solicitar</button>
+            </div>
+        </section>
+    </main>
+    <div id="carrito"></div>
+
+    <footer></footer>
+
+    <script src="tienda.js"> </script> 
+</body>
+</html>
